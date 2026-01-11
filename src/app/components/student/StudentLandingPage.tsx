@@ -51,7 +51,7 @@ export function StudentLandingPage({ onJoin }: StudentLandingPageProps) {
               onClick={onJoin} 
               className="bg-[#DFFF6C] hover:bg-[#c9ea4f] text-black font-semibold shadow-lg shadow-[#DFFF6C]/20 hover:cursor-pointer"
             >
-              Join SpottedAI
+              Join OnCampus
             </Button>
           </div>
         </div>
@@ -99,7 +99,7 @@ export function StudentLandingPage({ onJoin }: StudentLandingPageProps) {
                 size="lg"
                 className="bg-[#DFFF6C] hover:bg-[#c9ea4f] text-black px-12 h-14 text-base font-semibold shadow-xl shadow-[#DFFF6C]/30 hover:shadow-2xl hover:shadow-[#DFFF6C]/40 transition-all duration-300 hover:cursor-pointer"
               >
-                Join SpottedAI
+                Join OnCampus
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
             </div>
@@ -133,7 +133,7 @@ export function StudentLandingPage({ onJoin }: StudentLandingPageProps) {
             className="text-center space-y-6 mb-16"
           >
             <h2 className="text-5xl font-bold tracking-tight text-white">
-              How SpottedAI helps you get hired
+              How OnCampus helps you get hired
             </h2>
             <p className="text-xl text-gray-300 max-w-2xl mx-auto">
               Simple, fair, and designed to give you real opportunities
@@ -211,7 +211,7 @@ export function StudentLandingPage({ onJoin }: StudentLandingPageProps) {
               className="text-5xl font-bold tracking-tight"
               style={{ color: scrollProgress > 0.4 ? "#000" : "#fff" }}
             >
-              Why students use SpottedAI
+              Why students use OnCampus
             </h2>
           </motion.div>
 
@@ -282,7 +282,7 @@ export function StudentLandingPage({ onJoin }: StudentLandingPageProps) {
                 size="lg"
                 className="bg-gradient-to-r from-[#DFFF6C] to-[#c9ea4f] hover:from-[#c9ea4f] hover:to-[#DFFF6C] text-black px-12 h-16 text-lg font-semibold shadow-2xl shadow-[#DFFF6C]/20 hover:shadow-[#DFFF6C]/40 transition-all duration-300 hover:cursor-pointer"
               >
-                Join SpottedAI
+                Join OnCampus
                 <ArrowRight className="ml-2 h-6 w-6" />
               </Button>
             </div>
