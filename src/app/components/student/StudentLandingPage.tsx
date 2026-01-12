@@ -14,7 +14,7 @@ export function StudentLandingPage({ onJoin }: StudentLandingPageProps) {
   const backgroundColor = useTransform(
     scrollYProgress,
     [0, 0.3, 0.5],
-    ["#052326", "#FFFFFF"]
+    ["#052326", "#ffffff"],
   );
 
   const [scrollProgress, setScrollProgress] = useState(0);

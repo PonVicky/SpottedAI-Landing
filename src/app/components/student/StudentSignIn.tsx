@@ -40,7 +40,7 @@ export function StudentSignIn({ onSignIn, onSwitchToSignup }: StudentSignInProps
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-[#1B1F3B] via-[#252A45] to-[#1B1F3B] flex items-center justify-center px-6 py-12 relative overflow-hidden">
+    <div className="min-h-screen bg-gradient-to-br from-[#052326] via-[#052326] to-[#1e393c] flex items-center justify-center px-6 py-12 relative overflow-hidden">
       {/* Background effects */}
       <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-[#DFFF6C]/5 rounded-full blur-3xl"></div>
       <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-blue-500/5 rounded-full blur-3xl"></div>
@@ -62,7 +62,7 @@ export function StudentSignIn({ onSignIn, onSwitchToSignup }: StudentSignInProps
         </div>
 
         {/* Sign In Card */}
-        <div className="bg-[#252A45] rounded-3xl shadow-2xl border border-white/10 p-8">
+        <div className="bg-[#052326] rounded-3xl shadow-2xl border border-white/10 p-8">
           <div className="space-y-6">
             <div className="space-y-2 text-center">
               <h1 className="text-3xl font-bold text-white">Welcome back</h1>
@@ -81,7 +81,7 @@ export function StudentSignIn({ onSignIn, onSwitchToSignup }: StudentSignInProps
                     value={college}
                     onChange={(e) => setCollege(e.target.value)}
                     required
-                    className="w-full pl-12 pr-4 py-3 bg-[#1F2437] border border-white/10 rounded-xl text-white placeholder-gray-500 focus:outline-none focus:border-[#DFFF6C] transition-colors"
+                    className="w-full pl-12 pr-4 py-3 bg-[#052326] border border-white/10 rounded-xl text-white placeholder-gray-500 focus:outline-none focus:border-[#DFFF6C] transition-colors"
                   >
                     <option value="" disabled>Choose your college...</option>
                     {partnerColleges.map((collegeName, index) => (
@@ -102,7 +102,7 @@ export function StudentSignIn({ onSignIn, onSwitchToSignup }: StudentSignInProps
                   onChange={(e) => setEmail(e.target.value)}
                   required
                   placeholder="your.email@college.edu"
-                  className="w-full px-4 py-3 bg-[#1F2437] border border-white/10 rounded-xl text-white placeholder-gray-500 focus:outline-none focus:border-[#DFFF6C] transition-colors"
+                  className="w-full px-4 py-3 bg-[#052326] border border-white/10 rounded-xl text-white placeholder-gray-500 focus:outline-none focus:border-[#DFFF6C] transition-colors"
                 />
               </div>
 
@@ -117,7 +117,7 @@ export function StudentSignIn({ onSignIn, onSwitchToSignup }: StudentSignInProps
                   onChange={(e) => setPassword(e.target.value)}
                   required
                   placeholder="••••••••"
-                  className="w-full px-4 py-3 bg-[#1F2437] border border-white/10 rounded-xl text-white placeholder-gray-500 focus:outline-none focus:border-[#DFFF6C] transition-colors"
+                  className="w-full px-4 py-3 bg-[#052326] border border-white/10 rounded-xl text-white placeholder-gray-500 focus:outline-none focus:border-[#DFFF6C] transition-colors"
                 />
               </div>
 

@@ -81,7 +81,7 @@ export function StudentSignupFlow({ onComplete, onSwitchToSignIn }: StudentSignu
   const isStep3Valid = formData.skills.length > 0;
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-[#1B1F3B] via-[#252A45] to-[#1B1F3B] flex items-center justify-center px-6 py-12 relative overflow-hidden">
+    <div className="min-h-screen bg-gradient-to-br from-[#052326] via-[#052326] to-[#1e393c] flex items-center justify-center px-6 py-12 relative overflow-hidden">
       {/* Background effects */}
       <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-[#DFFF6C]/5 rounded-full blur-3xl"></div>
       <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-blue-500/5 rounded-full blur-3xl"></div>
@@ -108,15 +108,15 @@ export function StudentSignupFlow({ onComplete, onSwitchToSignIn }: StudentSignu
             <div key={num} className="flex items-center gap-3">
               <div
                 className={`w-10 h-10 rounded-full flex items-center justify-center font-semibold transition-all ${step >= num
-                    ? "bg-[#DFFF6C] text-black"
-                    : "bg-[#252A45] text-gray-500 border border-white/10"
+                  ? "bg-[#DFFF6C] text-black"
+                  : "bg-[#1e393c] text-white border border-white/10"
                   }`}
               >
                 {num}
               </div>
               {num < 3 && (
                 <div
-                  className={`w-16 h-1 rounded-full transition-all ${step > num ? "bg-[#DFFF6C]" : "bg-[#252A45]"
+                  className={`w-16 h-1 rounded-full transition-all ${step > num ? "bg-[#DFFF6C]" : "bg-[#1e393c]"
                     }`}
                 ></div>
               )}
@@ -125,7 +125,7 @@ export function StudentSignupFlow({ onComplete, onSwitchToSignIn }: StudentSignu
         </div>
 
         {/* Signup Card */}
-        <div className="bg-[#252A45] rounded-3xl shadow-2xl border border-white/10 p-8">
+        <div className="bg-[#052326] rounded-3xl shadow-2xl border border-white/10 p-8">
           <form onSubmit={handleSubmit} className="space-y-6">
             {/* Step 1: Basic Info */}
             {step === 1 && (
@@ -154,7 +154,7 @@ export function StudentSignupFlow({ onComplete, onSwitchToSignIn }: StudentSignu
                         onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                         required
                         placeholder="Enter your full name"
-                        className="w-full pl-12 pr-4 py-3 bg-[#1F2437] border border-white/10 rounded-xl text-white placeholder-gray-500 focus:outline-none focus:border-[#DFFF6C] transition-colors"
+                        className="w-full pl-12 pr-4 py-3 bg-[#052326] border border-white/10 rounded-xl text-white placeholder-gray-500 focus:outline-none focus:border-[#DFFF6C] transition-colors"
                       />
                     </div>
                   </div>
@@ -172,7 +172,7 @@ export function StudentSignupFlow({ onComplete, onSwitchToSignIn }: StudentSignu
                         onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                         required
                         placeholder="your.email@college.edu"
-                        className="w-full pl-12 pr-4 py-3 bg-[#1F2437] border border-white/10 rounded-xl text-white placeholder-gray-500 focus:outline-none focus:border-[#DFFF6C] transition-colors"
+                        className="w-full pl-12 pr-4 py-3 bg-[#052326] border border-white/10 rounded-xl text-white placeholder-gray-500 focus:outline-none focus:border-[#DFFF6C] transition-colors"
                       />
                     </div>
                     <p className="text-xs text-gray-500">Your profile is visible only to verified employers</p>
@@ -189,7 +189,7 @@ export function StudentSignupFlow({ onComplete, onSwitchToSignIn }: StudentSignu
                       onChange={(e) => setFormData({ ...formData, password: e.target.value })}
                       required
                       placeholder="Create a strong password"
-                      className="w-full px-4 py-3 bg-[#1F2437] border border-white/10 rounded-xl text-white placeholder-gray-500 focus:outline-none focus:border-[#DFFF6C] transition-colors"
+                      className="w-full px-4 py-3 bg-[#052326] border border-white/10 rounded-xl text-white placeholder-gray-500 focus:outline-none focus:border-[#DFFF6C] transition-colors"
                     />
                   </div>
                 </div>
@@ -231,7 +231,7 @@ export function StudentSignupFlow({ onComplete, onSwitchToSignIn }: StudentSignu
                         value={formData.college}
                         onChange={(e) => setFormData({ ...formData, college: e.target.value })}
                         required
-                        className="w-full pl-12 pr-4 py-3 bg-[#1F2437] border border-white/10 rounded-xl text-white placeholder-gray-500 focus:outline-none focus:border-[#DFFF6C] transition-colors appearance-none"
+                        className="w-full pl-12 pr-4 py-3 bg-[#052326] border border-white/10 rounded-xl text-white placeholder-gray-500 focus:outline-none focus:border-[#DFFF6C] transition-colors appearance-none"
                       >
                         <option value="" disabled>Choose your college...</option>
                         {partnerColleges.map((collegeName, index) => (
@@ -250,7 +250,7 @@ export function StudentSignupFlow({ onComplete, onSwitchToSignIn }: StudentSignu
                       value={formData.course}
                       onChange={(e) => setFormData({ ...formData, course: e.target.value })}
                       required
-                      className="w-full px-4 py-3 bg-[#1F2437] border border-white/10 rounded-xl text-white placeholder-gray-500 focus:outline-none focus:border-[#DFFF6C] transition-colors"
+                      className="w-full px-4 py-3 bg-[#052326] border border-white/10 rounded-xl text-white placeholder-gray-500 focus:outline-none focus:border-[#DFFF6C] transition-colors"
                     >
                       <option value="" disabled>Select your course...</option>
                       <option value="B.Tech Computer Science">B.Tech Computer Science</option>
@@ -275,7 +275,7 @@ export function StudentSignupFlow({ onComplete, onSwitchToSignIn }: StudentSignu
                       value={formData.year}
                       onChange={(e) => setFormData({ ...formData, year: e.target.value })}
                       required
-                      className="w-full px-4 py-3 bg-[#1F2437] border border-white/10 rounded-xl text-white placeholder-gray-500 focus:outline-none focus:border-[#DFFF6C] transition-colors"
+                      className="w-full px-4 py-3 bg-[#052326] border border-white/10 rounded-xl text-white placeholder-gray-500 focus:outline-none focus:border-[#DFFF6C] transition-colors"
                     >
                       <option value="" disabled>Select year...</option>
                       <option value="1st Year">1st Year</option>
@@ -292,7 +292,7 @@ export function StudentSignupFlow({ onComplete, onSwitchToSignIn }: StudentSignu
                     type="button"
                     onClick={handleBack}
                     variant="outline"
-                    className="flex-1 border-white/20 text-white hover:bg-white/10"
+                    className="flex-1 border-white/20 text-black hover:bg-white/10"
                   >
                     Back
                   </Button>
@@ -334,8 +334,8 @@ export function StudentSignupFlow({ onComplete, onSwitchToSignIn }: StudentSignu
                           type="button"
                           onClick={() => handleSkillToggle(skill)}
                           className={`px-4 py-2 rounded-full text-sm font-medium transition-all ${formData.skills.includes(skill)
-                              ? "bg-[#DFFF6C] text-black"
-                              : "bg-[#1F2437] text-gray-400 border border-white/10 hover:border-[#DFFF6C]/50"
+                            ? "bg-[#DFFF6C] text-black"
+                            : "bg-[#052326] text-gray-400 border border-white/10 hover:border-[#DFFF6C]/50"
                             }`}
                         >
                           {skill}
@@ -357,14 +357,14 @@ export function StudentSignupFlow({ onComplete, onSwitchToSignIn }: StudentSignu
                         value={formData.resume}
                         onChange={(e) => setFormData({ ...formData, resume: e.target.value })}
                         placeholder="Resume filename or link"
-                        className="w-full pl-12 pr-4 py-3 bg-[#1F2437] border border-white/10 rounded-xl text-white placeholder-gray-500 focus:outline-none focus:border-[#DFFF6C] transition-colors"
+                        className="w-full pl-12 pr-4 py-3 bg-[#052326] border border-white/10 rounded-xl text-white placeholder-gray-500 focus:outline-none focus:border-[#DFFF6C] transition-colors"
                       />
                     </div>
                     <p className="text-xs text-gray-500">You can upload this later from your dashboard</p>
                   </div>
                 </div>
 
-                <div className="bg-[#1F2437] border border-[#DFFF6C]/20 rounded-xl p-4">
+                <div className="bg-[#052326] border border-[#DFFF6C]/20 rounded-xl p-4">
                   <p className="text-sm text-gray-300">
                     <span className="font-semibold text-[#DFFF6C]">You're ready to apply!</span>
                     <br />
@@ -377,7 +377,7 @@ export function StudentSignupFlow({ onComplete, onSwitchToSignIn }: StudentSignu
                     type="button"
                     onClick={handleBack}
                     variant="outline"
-                    className="flex-1 border-white/20 text-white hover:bg-white/10"
+                    className="flex-1 border-white/20  hover:bg-white/10"
                   >
                     Back
                   </Button>
