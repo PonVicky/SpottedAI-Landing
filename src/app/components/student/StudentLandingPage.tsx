@@ -9,12 +9,12 @@ interface StudentLandingPageProps {
 
 export function StudentLandingPage({ onJoin }: StudentLandingPageProps) {
   const { scrollYProgress } = useScroll();
-  
+
   // Background color transition from dark navy to white
   const backgroundColor = useTransform(
     scrollYProgress,
     [0, 0.3, 0.5],
-    ["#1B1F3B", "#2A2F4F", "#FFFFFF"]
+    ["#052326", "#FFFFFF"]
   );
 
   const [scrollProgress, setScrollProgress] = useState(0);
@@ -26,29 +26,29 @@ export function StudentLandingPage({ onJoin }: StudentLandingPageProps) {
   }, [scrollYProgress]);
 
   return (
-    <motion.div 
+    <motion.div
       style={{ backgroundColor }}
       className="min-h-screen transition-colors duration-700"
     >
       {/* Navigation - Always visible */}
-      <nav className="fixed top-0 left-0 right-0 z-50 bg-[#1B1F3B]/80 backdrop-blur-xl border-b border-white/10">
+      <nav className="fixed top-0 left-0 right-0 z-50 bg-[#052326]/80 backdrop-blur-xl border-b border-white/10">
         <div className="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
           <div className="flex items-center gap-3">
             {/* <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-[#DFFF6C] to-[#c9ea4f] flex items-center justify-center shadow-lg shadow-[#DFFF6C]/20">
               <span className="font-bold text-lg text-black">OC</span>
             </div>
             <span className="font-semibold text-xl tracking-tight text-white">OnCampus</span> */}
-            <img 
-              src="/spottedAiLogo.svg" 
-              alt="OnCampus Logo" 
-              className="h-10 w-auto object-contain invert transition-all duration-300 hover:drop-shadow-[0_0_20px_rgba(223,255,108,0.8)] cursor-pointer" 
+            <img
+              src="/spottedAiLogo.svg"
+              alt="OnCampus Logo"
+              className="h-10 w-auto object-contain invert transition-all duration-300 hover:drop-shadow-[0_0_20px_rgba(223,255,108,0.8)] cursor-pointer"
               onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
             />
             <span className="text-sm text-gray-400 ml-2">for Students</span>
           </div>
           <div className="flex items-center gap-4">
-            <Button 
-              onClick={onJoin} 
+            <Button
+              onClick={onJoin}
               className="bg-[#DFFF6C] hover:bg-[#c9ea4f] text-black font-semibold shadow-lg shadow-[#DFFF6C]/20 hover:cursor-pointer"
             >
               Join OnCampus
@@ -62,7 +62,7 @@ export function StudentLandingPage({ onJoin }: StudentLandingPageProps) {
         {/* Subtle glows */}
         <div className="absolute top-20 right-0 w-[600px] h-[600px] bg-[#DFFF6C]/5 rounded-full blur-3xl"></div>
         <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-blue-500/5 rounded-full blur-3xl"></div>
-        
+
         <div className="max-w-6xl mx-auto relative z-10">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -83,7 +83,7 @@ export function StudentLandingPage({ onJoin }: StudentLandingPageProps) {
                   ></motion.span>
                 </span>
               </h1>
-              
+
               <p className="text-xl text-gray-300 leading-relaxed max-w-3xl mx-auto">
                 Get access to real job opportunities from companies hiring students across top colleges in India.
               </p>
@@ -94,7 +94,7 @@ export function StudentLandingPage({ onJoin }: StudentLandingPageProps) {
             </div>
 
             <div className="flex items-center justify-center gap-4 pt-4">
-              <Button 
+              <Button
                 onClick={onJoin}
                 size="lg"
                 className="bg-[#DFFF6C] hover:bg-[#c9ea4f] text-black px-12 h-14 text-base font-semibold shadow-xl shadow-[#DFFF6C]/30 hover:shadow-2xl hover:shadow-[#DFFF6C]/40 transition-all duration-300 hover:cursor-pointer"
@@ -173,7 +173,7 @@ export function StudentLandingPage({ onJoin }: StudentLandingPageProps) {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.1, duration: 0.6 }}
-                className="bg-[#252A45] rounded-2xl p-6 border border-white/10 hover:border-[#DFFF6C]/30 transition-all duration-300"
+                className="bg-[#052326] rounded-2xl p-6 border border-white/10 hover:border-[#DFFF6C]/30 transition-all duration-300"
               >
                 <div className="space-y-4">
                   <div className="w-12 h-12 rounded-xl bg-[#DFFF6C] flex items-center justify-center">
@@ -207,7 +207,7 @@ export function StudentLandingPage({ onJoin }: StudentLandingPageProps) {
             viewport={{ once: true }}
             className="text-center space-y-6 mb-16"
           >
-            <h2 
+            <h2
               className="text-5xl font-bold tracking-tight"
               style={{ color: scrollProgress > 0.4 ? "#000" : "#fff" }}
             >
@@ -277,7 +277,7 @@ export function StudentLandingPage({ onJoin }: StudentLandingPageProps) {
             </h2>
 
             <div className="flex items-center justify-center gap-4 pt-6">
-              <Button 
+              <Button
                 onClick={onJoin}
                 size="lg"
                 className="bg-gradient-to-r from-[#DFFF6C] to-[#c9ea4f] hover:from-[#c9ea4f] hover:to-[#DFFF6C] text-black px-12 h-16 text-lg font-semibold shadow-2xl shadow-[#DFFF6C]/20 hover:shadow-[#DFFF6C]/40 transition-all duration-300 hover:cursor-pointer"
@@ -310,7 +310,7 @@ export function StudentLandingPage({ onJoin }: StudentLandingPageProps) {
         <div className="max-w-7xl mx-auto">
           <div className="text-center space-y-4">
             <div className="flex items-center justify-center gap-3 mb-6">
-            <img src="/spottedAiLogo.svg" alt="OnCampus Logo" className="h-10 w-auto object-contain " />
+              <img src="/spottedAiLogo.svg" alt="OnCampus Logo" className="h-10 w-auto object-contain " />
             </div>
             <p className="text-sm text-gray-600 italic">This helps you get hired.</p>
             <p className="text-sm text-gray-500">© 2026 SpottedAI. Fair opportunities, real chances.</p>

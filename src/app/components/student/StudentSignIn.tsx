@@ -53,12 +53,12 @@ export function StudentSignIn({ onSignIn, onSwitchToSignup }: StudentSignInProps
       >
         {/* Logo */}
         <div className="flex items-center justify-center gap-3 mb-8">
-          <img 
-              src="/spottedAiLogo.svg" 
-              alt="OnCampus Logo" 
-              className="h-10 w-auto object-contain invert transition-all duration-300 hover:drop-shadow-[0_0_20px_rgba(223,255,108,0.8)] cursor-pointer" 
-              onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-            />
+          <img
+            src="/spottedAiLogo.svg"
+            alt="OnCampus Logo"
+            className="h-10 w-auto object-contain invert transition-all duration-300 hover:drop-shadow-[0_0_20px_rgba(223,255,108,0.8)] cursor-pointer"
+            onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+          />
         </div>
 
         {/* Sign In Card */}

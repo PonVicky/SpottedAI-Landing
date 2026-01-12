@@ -94,12 +94,12 @@ export function StudentSignupFlow({ onComplete, onSwitchToSignIn }: StudentSignu
       >
         {/* Logo */}
         <div className="flex items-center justify-center gap-3 mb-8">
-          <img 
-              src="/spottedAiLogo.svg" 
-              alt="OnCampus Logo" 
-              className="h-10 w-auto object-contain invert transition-all duration-300 hover:drop-shadow-[0_0_20px_rgba(223,255,108,0.8)] cursor-pointer" 
-              onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-            />
+          <img
+            src="/spottedAiLogo.svg"
+            alt="OnCampus Logo"
+            className="h-10 w-auto object-contain invert transition-all duration-300 hover:drop-shadow-[0_0_20px_rgba(223,255,108,0.8)] cursor-pointer"
+            onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+          />
         </div>
 
         {/* Progress Indicator */}
@@ -107,19 +107,17 @@ export function StudentSignupFlow({ onComplete, onSwitchToSignIn }: StudentSignu
           {[1, 2, 3].map((num) => (
             <div key={num} className="flex items-center gap-3">
               <div
-                className={`w-10 h-10 rounded-full flex items-center justify-center font-semibold transition-all ${
-                  step >= num
+                className={`w-10 h-10 rounded-full flex items-center justify-center font-semibold transition-all ${step >= num
                     ? "bg-[#DFFF6C] text-black"
                     : "bg-[#252A45] text-gray-500 border border-white/10"
-                }`}
+                  }`}
               >
                 {num}
               </div>
               {num < 3 && (
                 <div
-                  className={`w-16 h-1 rounded-full transition-all ${
-                    step > num ? "bg-[#DFFF6C]" : "bg-[#252A45]"
-                  }`}
+                  className={`w-16 h-1 rounded-full transition-all ${step > num ? "bg-[#DFFF6C]" : "bg-[#252A45]"
+                    }`}
                 ></div>
               )}
             </div>
@@ -335,11 +333,10 @@ export function StudentSignupFlow({ onComplete, onSwitchToSignIn }: StudentSignu
                           key={skill}
                           type="button"
                           onClick={() => handleSkillToggle(skill)}
-                          className={`px-4 py-2 rounded-full text-sm font-medium transition-all ${
-                            formData.skills.includes(skill)
+                          className={`px-4 py-2 rounded-full text-sm font-medium transition-all ${formData.skills.includes(skill)
                               ? "bg-[#DFFF6C] text-black"
                               : "bg-[#1F2437] text-gray-400 border border-white/10 hover:border-[#DFFF6C]/50"
-                          }`}
+                            }`}
                         >
                           {skill}
                         </button>
